@@ -52,6 +52,14 @@ create(item){
   });
 }
 
+//delete/remove function
+remove(id){
+  this.mockData = this.mockData.filter(item =>{
+    if(item.id !== id){
+      return item;
+    }
+  });
+}
 
   ngOnInit() {
   }
