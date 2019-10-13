@@ -42,6 +42,17 @@ id: number;
 
   constructor() { }
 
+//create function to create a new item.
+create(item){
+  this.mockData.push({
+    id: Date.now(),
+    title: item,
+    done: false,
+    date: new Date()
+  });
+}
+
+
   ngOnInit() {
   }
 
