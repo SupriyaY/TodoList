@@ -68,6 +68,16 @@ edit(id, title){
   this.id = id;
 }
 
+//function that performs update
+update(title){
+  this.mockData.map(item => {
+ if (item.id === this.id){
+   item['title'] = title;
+ }
+  });
+  this.show = false
+}
+
   ngOnInit() {
   }
 
