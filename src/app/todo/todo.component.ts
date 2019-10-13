@@ -61,6 +61,13 @@ remove(id){
   });
 }
 
+//this function does the same as renderEditForm in previous blog
+edit(id, title){
+  this.show = true;
+  this.value = title;
+  this.id = id;
+}
+
   ngOnInit() {
   }
 
