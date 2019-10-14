@@ -78,6 +78,14 @@ update(title){
   this.show = false
 }
 
+setTaskComplete(id){
+  this.mockData.map( item =>{
+    if (item.id === id){
+      item['done'] = true;
+    }
+  });
+}
+
   ngOnInit() {
   }
 
